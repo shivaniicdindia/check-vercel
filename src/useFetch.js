@@ -40,7 +40,7 @@ const useFetch = () => {
             .then(data => setBlogpage(data.data.postById));
         fetch('https://api-pranavdhar.herokuapp.com/graphql', sendingPost)
             .then(response => response.json())
-            .then(data => setBlogs(data.data.allPosts));
+            .then(data => setBlogs(data?.data?.allPosts));
     },[id,query])
 
     const numberofblogs = blogs.length;

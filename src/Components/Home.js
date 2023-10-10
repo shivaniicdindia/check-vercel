@@ -9,14 +9,12 @@ function Home() {
   return (
     <div className="home" id="home">
       <p className="gif" align="center">
-        <a href="https://github.com/iampranavdhar">
           <img
             src="https://user-images.githubusercontent.com/41234408/101987297-4473fb00-3cb9-11eb-9675-289ada4eef7e.gif"
             alt="Animated footer bars"
             width="100%"
             max-width="1024px"
           />
-        </a>
       </p>
       <div className="home-data">
         <h1 className="home-title">
@@ -27,12 +25,12 @@ function Home() {
             width="50px"
           ></img>
           <br />
-          I'am <span>Pranavdhar</span>
+          I'am <span>Shivanir</span>
           <br />
           Full Stack Developer
         </h1>
         <div className="home-img">
-          <img src="assets/home.png" alt=""></img>
+          <img src="" alt=""></img>
         </div>
       </div>
 

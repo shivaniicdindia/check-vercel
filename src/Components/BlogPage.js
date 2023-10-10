@@ -7,7 +7,6 @@ function BlogPage() {
 
     const {blogpage,id,numberofblogs} = useFetch();
     const description = `${blogpage.body}`;
-    const coverimage = "https://api-pranavdhar.herokuapp.com/media/"+blogpage.coverImage;
 
     const history = useHistory();
     const prevPost = () => {
@@ -26,9 +25,7 @@ function BlogPage() {
                 <div >
                     <p className='category'><b>Category:</b> {blogpage.category}</p>
                 </div>
-                <div>
-                    <img className = 'blog-coverimage' src={coverimage} alt='CoverImage'/>
-                </div>
+               
                 
                 {/* This dangerouslySetInnerHTML is for rendering exactly the html elements in the div without escaping the html tags */}
                 <div className='blog-description'
