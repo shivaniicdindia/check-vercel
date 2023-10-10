@@ -12,7 +12,7 @@ function Footer() {
             <p className="footer-title">Shivani</p>
             <div className="footer-social">
                 <a href="/" className="footer-icon"><LinkedInIcon/></a>
-                <a href="#home" className="footer-icon"><TelegramIcon/></a>
+                <a href="/" className="footer-icon"><TelegramIcon/></a>
                 <a href="/" className="footer-icon"><TwitterIcon/></a>
                 <a href="/" className="footer-icon"><GitHubIcon/></a>
             </div>
