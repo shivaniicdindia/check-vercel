@@ -9,12 +9,7 @@ function Home() {
   return (
     <div className="home" id="home">
       <p className="gif" align="center">
-          <img
-            src="https://user-images.githubusercontent.com/41234408/101987297-4473fb00-3cb9-11eb-9675-289ada4eef7e.gif"
-            alt="Animated footer bars"
-            width="100%"
-            max-width="1024px"
-          />
+       
       </p>
       <div className="home-data">
         <h1 className="home-title">
@@ -36,18 +31,18 @@ function Home() {
 
       <div className="home-social">
         <a
-          href="https://www.linkedin.com/in/sai-pranavdhar-reddy-nalamalapu-038104206/"
+          href="/"
           className="home-social-icon"
         >
           <LinkedInIcon className="icon" />
         </a>
         <a
-          href="https://twitter.com/iampranavdhar"
+         href="/"
           className="home-social-icon"
         >
           <TwitterIcon className="icon" />
         </a>
-        <a href="https://github.com/iampranavdhar" className="home-social-icon">
+        <a   href="/" className="home-social-icon">
           <GitHubIcon className="icon" />
         </a>
         <a href="#home" className="home-social-icon">
