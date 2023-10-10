@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React} from 'react'
 import ProjectCard from './ProjectCard';
 import './Projects.css'
 
@@ -14,7 +14,6 @@ function Projects() {
         {projects.map((project) =>
                 <ProjectCard
                     key={"1"}
-                 
                     description={"description"}
                     codelink={"1codelink"}
                     demolink={"1demolik"}
