@@ -9,7 +9,7 @@ import TelegramIcon from '@material-ui/icons/Telegram';
 function Footer() {
     return (
         <div className='footer'>
-            <p className="footer-title">Pranavdhar</p>
+            <p className="footer-title">Shivani</p>
             <div className="footer-social">
                 <a href="" className="footer-icon"><LinkedInIcon/></a>
                 <a href="#home" className="footer-icon"><TelegramIcon/></a>

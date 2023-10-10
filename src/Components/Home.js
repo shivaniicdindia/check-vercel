@@ -20,7 +20,7 @@ function Home() {
             width="50px"
           ></img>
           <br />
-          I'am <span>Shivanir</span>
+          I'am <span>Shivani</span>
           <br />
           Full Stack Developer
         </h1>
