@@ -1,7 +1,0 @@
-# - name: Use ChatGPT to Generate Content
-#   env:
-#     CHATGPT_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
-#   run: |
-#     # Use the API key stored in secrets to make requests to ChatGPT service
-#     # Perform actions like content generation, natural language processing, etc.
-#     # Example: curl -H "Authorization: Bearer $CHATGPT_API_KEY" -X POST ...
