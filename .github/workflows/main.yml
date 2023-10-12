@@ -32,7 +32,7 @@ jobs:
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
-          vercelToken: ${{ secrets.VERCEL_TOKEN }}
+          vercelToken: PYrulG9ldpe1vXrLjV8jVHtu
           orgId: ${{ secrets.VERCEL_ORG_ID }}
           projectId: ${{ secrets.YOUR_PROJECT_ID }} 
           target: production  
