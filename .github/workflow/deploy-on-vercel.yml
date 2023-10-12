@@ -1,0 +1,41 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main  # Replace with the branch you want to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: npm install  # Use yarn if you prefer
+
+      - name: Deploy to Vercel
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}  # Add your Vercel organization ID here
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}  # Add your Vercel project ID here
+          
+        run: npx vercel --prod
+
+      - name: Send Slack notification
+              uses: 8398a7/action-slack@v3
+              with:
+                status: ${{ job.status }}
+                author_name: ${{ github.actor }}
+                author_icon: ${{ github.actor }}
+                title: "GitHub Action Notification"
+                text: "The GitHub Action workflow has completed."
+
+              env:
+                SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
