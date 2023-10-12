@@ -34,5 +34,4 @@ jobs:
         with:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          YOUR_PROJECT_IDd: ${{ secrets.YOUR_PROJECT_ID }}  # Replace with your Vercel project ID
-         
+          YOUR_PROJECT_ID: ${{ secrets.YOUR_PROJECT_ID }}  
