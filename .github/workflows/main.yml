@@ -33,6 +33,6 @@ jobs:
         uses: amondnet/vercel-action@v20
         with:
           vercelToken: ${{ secrets.VERCEL_TOKEN }}
-          projectId: prj_pkR1mpwmWJVh0I1OdopZui1acKuQ  # Replace with your Vercel project ID
+          projectId: ${{secrets.YOUR_PROJECT_ID }}  # Replace with your Vercel project ID
           target: production  # Replace with the target environment
 
