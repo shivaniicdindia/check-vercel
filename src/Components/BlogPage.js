@@ -33,7 +33,7 @@ function BlogPage() {
                     __html: description
                 }}></div>
                 <div className='blogpage-navigation'>
-                    <button onClick={()=>{id > 1 ? prevPost(): console.log("You are at the extreme")}}>Previous</button>
+                    <button onClick={()=>{id > 1 ? prevPost(): console.log("You are at the extreme")}}>Pressvious</button>
                     <button onClick={()=>{id < numberofblogs ? nextPost(): console.log("You are at extreme")}}>Next</button>
                 </div>
             </div>
